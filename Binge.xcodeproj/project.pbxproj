@@ -45,6 +45,8 @@
 		2B244BFA1CD287770076E489 /* BingeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BingeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B244BFE1CD287770076E489 /* BingeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingeUITests.swift; sourceTree = "<group>"; };
 		2B244C001CD287770076E489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B244C0C1CD28E920076E489 /* WKWebViewPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewPrivate.h; sourceTree = "<group>"; };
+		2B244C0D1CD28F040076E489 /* Binge-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Binge-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +101,9 @@
 				2B244BE31CD287770076E489 /* ViewController.swift */,
 				2B244BE51CD287770076E489 /* Assets.xcassets */,
 				2B244BE71CD287770076E489 /* Main.storyboard */,
+				2B244C0C1CD28E920076E489 /* WKWebViewPrivate.h */,
 				2B244BEA1CD287770076E489 /* Info.plist */,
+				2B244C0D1CD28F040076E489 /* Binge-Bridging-Header.h */,
 			);
 			path = Binge;
 			sourceTree = "<group>";
@@ -391,6 +395,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pw.0xc0d3.binge.Binge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "Binge/Binge-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -403,6 +408,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pw.0xc0d3.binge.Binge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "Binge/Binge-Bridging-Header.h";
 			};
 			name = Release;
 		};
