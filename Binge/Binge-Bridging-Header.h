@@ -9,6 +9,4 @@
 #ifndef Binge_Bridging_Header_h
 #define Binge_Bridging_Header_h
 
-#import "WKWebViewPrivate.h"
-
 #endif /* Binge_Bridging_Header_h */
